@@ -13,10 +13,10 @@
   padding: 0;
 }
 
-/* Wireframes*/
+/* Wireframes
 .frame {
   border: 1px solid red;
-}
+}*/
 
 body {
   font-family: "Kumbh Sans", sans-serif;
@@ -36,6 +36,7 @@ body {
     "image"
     "white"
     "social";
+  border-radius: 10px;
 }
 
 .image {
@@ -43,6 +44,7 @@ body {
   width: 350px;
   height: 145px;
   background-image: url(/images/bg-pattern-card.svg);
+  border-radius: 10px 10px 0 0;
 }
 
 .white {
@@ -60,4 +62,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "followers likes photos";
+  border-radius: 0 0 10px 10px;
+  border-top: 1px solid hsla(0, 0%, 59%, 30%);
 }
