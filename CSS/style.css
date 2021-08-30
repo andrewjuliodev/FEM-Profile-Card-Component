@@ -31,20 +31,36 @@ body {
   margin: 200px auto;
   justify-content: center;
   display: grid;
-  grid-template-rows: 145px 145px 80px;
+  grid-template-rows: 290px 80px;
   grid-template-areas:
-    "image"
-    "white"
+    "profile"
     "social";
   border-radius: 10px;
+}
+
+.profile {
+  grid-area: "profile";
+  display: grid;
+  grid-template-rows: 145px 145px;
+  grid-template-areas:
+    "image"
+    "white";
 }
 
 .image {
   grid-area: "image";
   width: 350px;
   height: 145px;
-  background-image: url(/images/bg-pattern-card.svg);
   border-radius: 10px 10px 0 0;
+  background-image: url("/images/bg-pattern-card.svg");
+}
+
+.img {
+  border-radius: 50%;
+  border: 6px solid white;
+  position: relative;
+  top: 90px;
+  left: 120px;
 }
 
 .white {
@@ -52,6 +68,8 @@ body {
   width: 350px;
   height: 145px;
   background-color: white;
+  text-align: center;
+  padding-top: 80px;
 }
 
 .social {
@@ -64,4 +82,5 @@ body {
   grid-template-areas: "followers likes photos";
   border-radius: 0 0 10px 10px;
   border-top: 1px solid hsla(0, 0%, 59%, 30%);
+  text-align: center;
 }
