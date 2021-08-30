@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Wireframes*/
+.frame {
+  border: 1px solid red;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: hsl(185, 75%, 39%);
+  width: 1440px;
+  height: 720px;
+}
+
+.card {
+  width: 350px;
+  height: 370px;
+  margin: 200px auto;
+  justify-content: center;
+  display: grid;
+  grid-template-rows: 145px 145px 80px;
+  grid-template-areas:
+    "image"
+    "white"
+    "social";
+}
+
+.image {
+  grid-area: "image";
+  width: 350px;
+  height: 145px;
+  background-image: url(/images/bg-pattern-card.svg);
+}
+
+.white {
+  grid-area: "white";
+  width: 350px;
+  height: 145px;
+  background-color: white;
+}
+
+.social {
+  grid-area: "social";
+  width: 350px;
+  height: 80px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "followers likes photos";
+}
